@@ -1,0 +1,436 @@
+html,
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    /* font-family:  'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family: 'Gill Sans', 'Trebuchet MS', sans-serif;
+}
+
+:root {
+    --primary-color: #3498db;
+    --secondary-color: #2ecc71;
+    --text-color: #333;
+}
+
+.main {
+
+    position: relative;
+    background-image: linear-gradient(#f2d4c5, #e3c9bb, #e59e74, #d47847, #6a3b2b, #151813, #000000);
+}
+
+.nav {
+    z-index: 999;
+    background-color: rgba(242, 212, 197, 0.89);
+    position: fixed;
+}
+.nav .logo{
+    font-size: 2.1vw;
+}
+
+.field a {
+    text-decoration: none;
+    font-weight: 400;
+    color: #000000;
+}
+
+.field a:hover {
+    color: #6A3B2B;
+}
+
+.home {
+    padding-top: 7vw;
+}
+
+.left-text h1 span {
+    color: #D47847;
+}
+
+.left-text button {
+    padding: 1vw 2vw;
+    background-color: #D47847;
+    border-radius: 50vw;
+    border: none;
+    color: #fff;
+}
+
+.left-text button:hover {
+    background-color: #6a3b2be3;
+
+}
+
+.burger {
+    z-index: 9999;
+    position: fixed;
+    right: 0;
+    top: 0;
+    background-color: #D47847;
+    display: none;
+}
+
+.home .right-img {
+    height: 65vh;
+    overflow: hidden;
+}
+
+.home .right-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.extra h1 {
+    font-size: 3vw;
+    margin-top: 7vw;
+    font-weight: 200;
+}
+
+.about h1,
+.service h1,
+.mentor h1,
+.contect h1 {
+    font-size: 2vw;
+    margin-top: 7vw;
+}
+
+.cards {
+    margin-top: 7vw;
+
+}
+
+.crd {
+    margin-top: 8vw;
+}
+
+.crd .image {
+    width: 40%;
+    height: 56vh;
+    overflow: hidden;
+}
+
+.crd .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-cards {
+    margin-top: 7vw;
+     gap: 1.52vw;
+     margin: auto;
+     margin-top: 4vw;
+     flex-wrap: wrap;
+     justify-content: center;
+     
+}
+
+.service-card {
+    width: 32%;
+    border-radius: 1vw;
+    background-color: #e59d742f;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.service-card .img {
+    overflow: hidden;
+    width: 100%;
+    height: 35vh;
+}
+
+.service-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.service-card .text {
+    padding: 2vw;
+}
+
+.service-card .text h6 {
+    color: #44281ef9;
+}
+
+.service-card .text p {
+    font-size: 1vw;
+}
+
+.mentor,
+.contect {
+    margin-top: 7vw;
+    color: #fff;
+}
+
+.mentor p {
+    font-size: .9vw;
+}
+
+.mentores {
+    margin-top: 7vw;
+
+}
+
+.mentore-card {
+    border: 1px solid rgb(212, 120, 71);
+    border-radius: 50vw;
+    cursor: pointer;
+}
+
+.mentore-card:hover {
+    background-color: #d4784727;
+
+}
+
+.mentore-card .img {
+    width: 5vw;
+    height: 5vw;
+    border-radius: 50vw;
+    overflow: hidden;
+}
+
+
+.mentore-card .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mentore-card .icon i {
+    font-size: 3vw;
+    font-weight: 100;
+    color: gray;
+}
+
+.mentor .para {
+    display: none;
+}
+
+.contect .post {
+    padding: 4vw 2vw;
+    margin-top: 7vw;
+}
+
+.contect .post:hover {
+    background-color: #6a3b2ba7;
+    transition: all .3s ease-in;
+}
+
+.contect .sub button:hover {
+    border: 1px solid rgb(212, 120, 71);
+}
+
+.contect .post .imag {
+    width: 22vw;
+    height: 27vw;
+    overflow: hidden;
+    border-radius: 10vw;
+}
+
+.contect .post .imag img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hr {
+    margin-top: 7vw;
+    color: #fff;
+}
+
+.footer-logo .img {
+    overflow: hidden;
+}
+
+.footer-logo p {
+    font-size: 1vw;
+}
+
+.footer-logo .img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer .sections h6:hover {
+    color: #6A3B2B;
+}
+
+footer .sections a {
+    text-decoration: none;
+    color: #fff;
+}
+
+footer .sections h6 {
+    font-size: 1vw;
+    cursor: pointer;
+}
+
+.copy-right {
+    padding-bottom: 2vw;
+    font-size: 1vw;
+}
+
+#scrollBtn {
+    background-color: transparent;
+    position: fixed;
+    padding: .5vw 1vw;
+    font-size: 2vw;
+    border-radius: .7vw;
+    border: 2px solid #6a3b2be3;
+    right: 3vw;
+    bottom: 6vw;
+    color: #6a3b2be3;
+}
+@media (max-width:1000px) {
+    .nav .logo{
+        font-size: 2.3vw;
+    }
+    .home {
+        padding-top: 17vw;
+    }
+
+    .about h1,
+    .service h1,
+    .mentor h1,
+    .contect h1 {
+        font-size: 3vw;
+        margin-top: 7vw;
+    }
+
+    .home .right-img {
+        margin: auto;
+        width: 90%;
+        height: 60vw;
+        overflow: hidden;
+    }
+
+    .left-text p {
+        font-size: 2vw;
+    }
+
+    .left-text button {
+        font-size: 2vw;
+    }
+
+    .extra h1 {
+        font-size: 2.5vw;
+    }
+
+    .crd .txt p {
+        font-size: 2vw;
+    }
+    .service-cards {
+        margin: auto;
+        justify-content: center;
+
+    }
+  
+    .service-card {
+        width: 90%;
+        margin: auto;
+        margin-top: 5vw;
+
+    }
+    .service-card .img{
+        
+        height: 45vw;
+
+    }
+    
+    .service-card .text h5 {
+        font-size: 3vw;
+
+    }
+
+    .service-card .text h6 {
+        font-size: 2vw;
+
+    }
+
+    .service-card .text p {
+        font-size: 2.2vw;
+
+    }
+
+    .mentore-card .img {
+        width: 10vw;
+        height: 10vw;
+        border-radius: 50vw;
+        overflow: hidden;
+    }
+
+    .crd .image {
+        margin: auto;
+        width: 90%;
+        height: 55vw;
+        overflow: hidden;
+    }
+
+    .crd .image img{
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        
+    }
+
+    .mentor p {
+        font-size: 2vw;
+    }
+
+    .mentore-card {
+        border-radius: 10vw;
+    }
+
+    .mentore-card .info h5 {
+        font-size: 2vw;
+    }
+
+    .mentore-card .info h6 {
+        font-size: 1.2vw;
+    }
+
+    .mentore-card .icon i {
+        font-size: 5vw;
+    }
+
+    .about-mentore .info h5 {
+        font-size: 2.5vw;
+    }
+
+    .about-mentore .info h6 {
+        font-size: 1.8vw;
+    }
+
+    .contect .post .imag {
+        width: 42vw;
+        height: 32vw;
+        border-radius: 20vw;
+    }
+    .fn p, .ln p, .email p{
+        font-size: 2.1vw;
+    }
+
+    .details button{
+        font-size: 2.2vw;
+    }
+
+    .footer-logo p {
+        font-size: 2vw;
+
+    }
+
+    footer .sections h6 {
+        font-size: 2vw;
+    }
+
+    .copy-right {
+        font-size: 2vw;
+    }
+
+    #scrollBtn{
+        bottom: 10vw;
+    }
+    
+}
